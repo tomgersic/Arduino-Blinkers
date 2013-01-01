@@ -18,7 +18,10 @@ void LED::Pulse(int interval) {
 void LED::Update() {
   unsigned long currentMillis = millis();
  
-  if(currentMillis - _previousMillis > _interval) {
+  unsigned long deltaMillis = currentMillis - _previousMillis;
+ 
+  //if greater than the specified interval or if less than 0 (we ran out of numbers)
+  if(deltaMillis > _interval || deltaMillis < 0) {
     // save the last time you blinked the LED 
     _previousMillis = currentMillis;   
 

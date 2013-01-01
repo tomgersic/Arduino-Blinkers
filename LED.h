@@ -8,8 +8,8 @@ class LED
     void Update();
   private:
     int _pin;
-    int _previousMillis;
-    long _interval;
+    unsigned long _previousMillis;
+    unsigned long _interval;
     long _ledState; 
 };
 #endif
