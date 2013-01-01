@@ -1,13 +1,13 @@
-/* Blink without Delay
+/* LED Runloop Blink
  
  Turns on and off a light emitting diode(LED) connected to a digital  
  pin, without using the delay() function.  This means that other code
  can run at the same time without being interrupted by the LED code.
  
+ Modified from example code to use classes to be more OOPy
+ 
  The circuit:
- * LED attached from pin 13 to ground.
- * Note: on most Arduinos, there is already an LED on the board
- that's attached to pin 13, so no hardware is needed for this example.
+ LEDs attached from pins 10,11,12, and 13 to ground.
  */
 
 //#include "OopFix.h"
